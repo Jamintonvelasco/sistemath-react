@@ -10,6 +10,8 @@ import contenidoRoutes from "./src/routes/contenidoRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cors());
+const PORT = 3001;
+
 
 // ✅ Montar rutas de contenido
 app.use("/api/contenido", contenidoRoutes);
@@ -674,7 +676,7 @@ app.use((req, res, next) => {
 // =========================
 /* INICIAR SERVIDOR */
 // =========================
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`🌐 Accesible desde red local en: http://192.168.1.49:${PORT}`);
 });
