@@ -1,0 +1,15 @@
+{
+  "name": "sistemath-react",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Proyecto SisteMath con React y Node.js",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "server": "node server.js",
+    "start": "npm run build && npm run server",
+    "tunnel": "npm run build && node server.js & cloudflared tunnel --url http://localhost:3001"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

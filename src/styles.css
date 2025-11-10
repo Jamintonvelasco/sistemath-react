@@ -1,0 +1,474 @@
+/* === CONFIGURACIÓN GLOBAL PARA OCUPAR TODA LA PANTALLA === */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenedor principal ahora llena toda la pantalla */
+.app-container {
+  width: 100vw;     /* 100% del ancho visible */
+  height: 100vh;    /* 100% de la altura visible */
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* permite scroll si el contenido crece */
+}
+
+
+
+
+body {
+  display: block;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto; /* centra horizontalmente */
+}
+
+
+
+/* --- Login y Recuperación de Contraseña --- */
+
+.login-page, .recovery-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.login-container, .recovery-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-form, .recovery-form {
+  background-color: #fff7e6; /* Amarillo claro */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Ancho fijo para el formulario */
+  margin: 10px;
+}
+
+.image-section {
+  width: 500px; /* Ancho fijo para la imagen */
+  margin: 10px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold; 
+  background-image: url('./assets/login.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form h2, .recovery-form h2 {
+  text-align: center;
+  color: #555;
+}
+
+.login-form label, .recovery-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.login-form input, .recovery-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-form button, .recovery-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover, .recovery-form button:hover {
+  background-color: #0056b3;
+}
+
+.recovery-form .recovery-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.recovery-form .recovery-buttons button {
+  width: 48%;
+  margin-top: 0;
+}
+
+.recovery-form .recovery-buttons button:first-child {
+  background-color: #6c757d;
+}
+
+.recovery-form .recovery-buttons button:first-child:hover {
+  background-color: #5a6268;
+}
+
+/* --- Menú del Estudiante --- */
+
+.student-menu-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.nav-tabs button {
+  padding: 10px 20px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.nav-tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-tabs button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.content-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.content-section {
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.content-section.blue {
+  background-color: #e6f2ff; /* Azul claro */
+}
+
+.content-section.green {
+  background-color: #e6ffe6; /* Verde claro */
+}
+
+.content-section h3 {
+  color: #333;
+}
+
+.content-section p, .content-section ul {
+  line-height: 1.6;
+}
+
+.content-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-section ul li {
+  margin-bottom: 10px;
+}
+
+
+
+/* Agrega estos estilos al final de tu archivo styles.css */
+
+.content-sections {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.teoria-menu-container {
+  width: 300px; /* O el ancho que prefieras */
+  background-color: #f0f8ff; /* Azul muy claro */
+  border: 1px solid #cceeff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teoria-menu-container h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.teoria-menu-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teoria-menu-container ul li {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  background-color: #e6f2ff; /* Azul claro */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teoria-menu-container ul li:hover {
+  background-color: #d1e2f7; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Agrega estos estilos al final de tu archivo styles.css o donde tengas los estilos de TeoriaMenu */
+
+.teoria-menu-container ul li {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  background-color: #e6f2ff; /* Azul claro */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em; /* Asegura que todos los ítems de la lista tengan el mismo tamaño */
+}
+
+.teoria-menu-container ul li:hover {
+  background-color: #d1e2f7; /* Azul más oscuro al pasar el mouse */
+}
+
+.teoria-menu-main-item {
+  font-weight: bold;
+  font-size: 1.2em; /* Puedes ajustar este valor si quieres que sea más grande */
+  background-color: #f0f8ff; /* Mismo color de fondo que el contenedor */
+  cursor: default; /* El cursor no debe cambiar */
+  padding-bottom: 0;
+}
+
+/* Estilos en tu archivo CSS */
+
+/* 1. Alinea el menú lateral y el contenido principal */
+.content-sections {
+  display: flex; 
+  margin-top: 20px;
+}
+
+/* 2. Estilos para el contenedor del menú lateral */
+.teoria-menu-sidebar {
+  width: 250px; 
+  padding: 0;
+  margin-right: 20px;
+}
+
+/* 3. Estilos para los botones del menú lateral */
+.teoria-menu-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 4. Estilo para resaltar el tema activo (como el azul en la imagen) */
+.teoria-menu-sidebar .active-topic {
+  background-color: #1a73e8; /* Fondo azul */
+  color: white; /* Texto blanco */
+  font-weight: bold;
+}
+
+
+/* === ESTILO MENÚ LATERAL DE PRÁCTICA === */
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;         /* 👈 apila los temas en vertical */
+  width: 250px;
+  background-color: #f9fafb;      /* gris claro */
+  border-right: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 8px 0 0 8px;
+}
+
+/* botones del menú */
+.menu-boton {
+  text-align: left;
+  background-color: transparent;
+  color: #1f2937;                 /* gris oscuro */
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* al pasar el mouse */
+.menu-boton:hover {
+  background-color: #e5e7eb;      /* gris más oscuro */
+}
+
+/* botón activo (tema seleccionado) */
+.menu-boton.activo {
+  background-color: #2563eb;      /* azul igual al de Ejemplos */
+  color: white;
+  font-weight: 600;
+}
+
+/* contenedor general */
+.menu-contenedor {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* área principal del contenido */
+.contenido-principal {
+  flex: 1;
+  padding: 1.5rem 2rem;
+}
+
+/* títulos de módulo */
+.titulo-modulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #81d4fa, #0288d1);
+}
+
+.login-container {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  padding: 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #0288d1;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.login-form input,
+.login-form select {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.login-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #01579b;
+}
+
+.switch-mode {
+  margin-top: 15px;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-5px);
+    display: none;
+  }
+}
+
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  60% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    display: none;
+  }
+}

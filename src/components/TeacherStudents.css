@@ -1,0 +1,87 @@
+.teacher-students {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.teacher-students h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* --- BOTONES PRINCIPALES --- */
+.teacher-students button {
+  transition: all 0.2s ease-in-out;
+}
+
+.teacher-students button:hover {
+  transform: scale(1.05);
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.teacher-students .reporte-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* --- ITEM DE REPORTE --- */
+.teacher-students .reporte-item {
+  background: #ffffff;
+  border-left: 5px solid #2563eb;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease-in-out;
+}
+
+.teacher-students .reporte-item:hover {
+  background: #f3f6ff;
+}
+
+/* --- NOMBRE DEL ESTUDIANTE --- */
+.teacher-students .reporte-item strong {
+  color: #1e40af;
+  font-size: 15px;
+}
+
+/* --- CAMPOS DE DETALLE --- */
+.teacher-students .reporte-item p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* --- BOTÓN ACEPTAR --- */
+.teacher-students .aceptar-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.teacher-students .aceptar-btn:hover {
+  background: #16a34a;
+}
+
+/* --- BLOQUE DE AYUDA --- */
+.teacher-students .ayuda-box {
+  background: #fef3c7;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #92400e;
+  font-size: 14px;
+  border-left: 4px solid #facc15;
+}

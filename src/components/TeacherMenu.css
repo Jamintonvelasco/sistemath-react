@@ -1,0 +1,448 @@
+.teacher-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f3f6fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== HEADER ==== */
+.teacher-header {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  flex-direction: column; /* ✅ Cambiamos a columna */
+  align-items: center;
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  gap: 8px; /* ✅ Espacio entre las filas */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap; /* ✅ Para que no se monten si hay poco espacio */
+}
+
+.teacher-nav button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  transition: 0.2s;
+}
+
+.teacher-nav button:hover,
+.teacher-nav button.active {
+  background-color: #e0eaff;
+  color: #007bff;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.teacher-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.teacher-nav button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  transition: 0.2s;
+}
+
+.teacher-nav button:hover,
+.teacher-nav button.active {
+  background-color: #e0eaff;
+  color: #007bff;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ==== MAIN CONTENT ==== */
+.teacher-main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 40px; /* ✅ menos margen gris, más espacio útil */
+  gap: 40px; /* espacio entre los paneles */
+  max-width: 1600px; /* ✅ mucho más ancho */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+.teacher-sidebar {
+  width: 28%; /* ✅ más espacio para la lista de temas */
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  padding: 25px;
+}
+
+
+.teacher-sidebar h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.teacher-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-sidebar li {
+  background-color: #f7f7f7;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.teacher-sidebar li:hover {
+  background-color: #eaf2ff;
+}
+
+.teacher-sidebar li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ==== CONTENT AREA ==== */
+.teacher-content {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 40px 50px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 950px; /* ✅ tamaño fijo en ambas vistas */
+  margin: 0 auto; /* ✅ centrado horizontal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out; /* ✅ transición suave */
+}
+
+.teacher-content textarea {
+  width: 98%; /* ✅ antes era 100%, ahora deja un margen interno */
+  min-height: 150px;
+  resize: vertical;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box; /* ✅ importante: respeta padding dentro del ancho */
+  margin-bottom: 15px;
+}
+
+
+
+.intro-panel {
+  text-align: center;
+  color: #444;
+}
+
+.intro-panel h2 {
+  color: #007bff;
+}
+
+.tema-panel h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.acciones button {
+  background-color: #e0eaff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #007bff;
+  transition: 0.2s;
+}
+
+.acciones button:hover,
+.acciones .accion-active {
+  background-color: #007bff;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.acciones-finales {
+  display: flex;
+  gap: 10px;
+}
+
+.acciones-finales button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.aceptar {
+  background-color: #28a745;
+}
+
+.subir {
+  background-color: #17a2b8;
+}
+
+.finalizar {
+  background-color: #007bff;
+}
+
+/* ==== FOOTER ==== */
+.teacher-footer {
+  background-color: #e9ecef;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.ayuda {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* ===== PANEL DE BIENVENIDA ===== */
+.teacher-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ✅ centrado dentro del recuadro blanco */
+  text-align: center;
+  color: #333;
+  padding: 40px 30px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* ✅ evita que texto largo se desborde */
+  overflow: hidden;
+}
+
+.teacher-welcome .welcome-icon {
+  font-size: 60px; /* ✅ tamaño controlado */
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.teacher-welcome h2 {
+  font-size: 1.9rem;
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  word-wrap: break-word; /* ✅ evita desbordes */
+}
+
+.teacher-welcome p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 650px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Asegura que el texto y los elementos no se peguen a los bordes */
+.teacher-content h2,
+.teacher-content h3,
+.teacher-content p,
+.teacher-content textarea {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Ajuste del área de texto */
+.teacher-content textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Centrado del panel de bienvenida */
+.teacher-welcome {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.contenidos-creados {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contenidos-creados h3 {
+  margin-bottom: 10px;
+  color: #0066cc;
+}
+
+.contenidos-creados ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contenidos-creados li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* en TeacherMenu.css */
+.contenidos-creados ul li.contenido-activo {
+  background: #eef6ff;
+  border-left: 4px solid #1d4ed8;
+}
+
+
+.acciones-finales {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button.subir {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.subir:hover {
+  background-color: #1d4ed8;
+}
+
+button.finalizar {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.finalizar:hover {
+  background-color: #dc2626;
+}
+
+.tema-panel {
+  transition: all 0.3s ease;
+}
+
+
+.teacher-nav button.active {
+  background-color: #2563eb;
+  color: white;
+}
+.teacher-nav button {
+  border: none;
+  background-color: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
