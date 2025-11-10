@@ -15,8 +15,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "axios": "^1.6.8",
-    "recharts": "^2.12.3"
-
+    "recharts": "^2.12.3",
+    "react-katex": "^3.0.2",
+    "katex": "^0.16.9"
   },
   "devDependencies": {
     "vite": "^5.1.4",
