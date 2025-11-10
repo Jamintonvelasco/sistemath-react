@@ -6,10 +6,18 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "preview": "vite preview",
     "server": "node server.js",
     "start": "npm run build && npm run server",
     "tunnel": "npm run build && node server.js & cloudflared tunnel --url http://localhost:3001"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4",
+    "@vitejs/plugin-react": "^4.3.1"
+  }
 }
